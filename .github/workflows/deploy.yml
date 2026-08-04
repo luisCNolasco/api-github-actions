@@ -13,8 +13,6 @@ jobs:
       - name: Create Image
         run: docker build -t api-github-actions:latest .
       - name: Delete container
-        run: | 
-          docker stop api-actions
-          docker rm api-actions
+        run: docker rm -f api-actions || true
       - name: Deploy
-        run: docker run --name api-actions -p 8085:8080 -d api-github-actions:latest
+        run: docker run --name api-actions -p 8085:8080 -d --restart always api-github-actions:latest
