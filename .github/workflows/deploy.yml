@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build
-        run: mvn clean package -DskipTests
+        run: ./mvnw clean package -DskipTests
 #      - name: Deploy
 #        run: docker compose up -d --build
