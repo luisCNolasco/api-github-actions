@@ -9,6 +9,6 @@ public class GithubActionsController {
 
     @RequestMapping
     public String actions(){
-        return "Github Actions Linux-Windows";
+        return "API Spring Boot corriendo desde GitHub Actions \uD83D\uDE80";
     }
 }
