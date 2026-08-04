@@ -7,7 +7,7 @@ jobs:
   deploy:
     runs-on: self-hosted  # <-- importante, dice que use tu PC
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Build
         run: mvn clean package -DskipTests
       - name: Create Image

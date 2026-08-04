@@ -9,7 +9,7 @@ jobs:
       - self-hosted  # <-- importante, dice que use tu PC
       - windows
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Build
         run: ./mvnw clean package -DskipTests
       - name: Create Image
