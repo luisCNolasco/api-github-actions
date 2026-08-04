@@ -9,6 +9,6 @@ public class GithubActionsController {
 
     @RequestMapping
     public String actions(){
-        return "Github Actions";
+        return "Github Actions Linux";
     }
 }
