@@ -1,4 +1,4 @@
-name: Deploy Local
+name: Deploy Linux
 on:
   push:
     branches: [ "master" ]
