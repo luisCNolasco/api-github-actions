@@ -5,7 +5,9 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted  # <-- importante, dice que use tu PC
+    runs-on: 
+      - self-hosted
+      - linux 
     steps:
       - uses: actions/checkout@v6
       - name: Build
