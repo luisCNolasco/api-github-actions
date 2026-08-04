@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build
-        run: ./mvnw clean package -DskipTests
+        run: mvn clean package -DskipTests
       - name: Create Image
         run: docker build -t api-github-actions:latest .
       - name: Deploy
